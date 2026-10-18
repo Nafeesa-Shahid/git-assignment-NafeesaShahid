@@ -101,9 +101,8 @@ Conflicts(if there arises a conflict, reviewer needs to identify which code to k
 Code Correctness & Logic (no bugs and should meet the requirement of what was intended)
 
 
-**What is the difference between a merge commit and a fast-forward merge?** 
-Merge Commit: Created when branches have diverged, creating a brand-new "commit" node that explicitly ties both historical branches together.     
-
+**What is the difference between a merge commit and a fast-forward merge?**        
+Merge Commit: Created when branches have diverged, creating a brand-new "commit" node that explicitly ties both historical branches together.         
 Fast-Forward Merge: Occurs when the target branch has no new commits since branching, simply moving the pointer forward to the latest commit without creating an extra merge node.
 
 # Part 5 — Merge Conflict Scenarios
@@ -120,11 +119,13 @@ No, there will not be a conflict. coz Ali and Fatima are working on entirely dif
 
 Yes, there will be a conflict. coz both developers changed the exact same line (line 5) of the same file (config.py) to conflicting values. now Git has to pause and ask for conflict resolution.
 
+```
 <<<<<<HEAD (current change)    
 DEBUG = True      
 =======        
 DEBUG = False            
->>>>>> (incoming change)        
+>>>>>> (incoming change) 
+```     
 
 ## Scenario D
 
